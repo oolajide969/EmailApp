@@ -22,34 +22,11 @@ namespace EmailApp
     {
         static void Main(string[] args)
         {
-            //var accountName = "thelottofactorystorage";
-            //var accountKey = "G5ODjspiF3XYWScQQjhn+gLbO5oI3vx5TFuLPxvEhI4hK7UD+GCMAsZUcKdPzyOhhaVI1SLjRP0/ctkE/1G8qg==";
-            //var creds = new StorageCredentials(accountName, accountKey);
-            //var account = new CloudStorageAccount(creds, useHttps: true);
-            //var connectionString = "https://tlf-comm-service.communication.azure.com/;accesskey=R9CnmGixfsRScejJqpHxaKVfO0Fg4O5xbCv28dMy5lQaXjLXRJO/MUW7CQ7M/Lbqi2zytHVFCl1uBcvRkiXk/g=="
-
-
-            var json = "{  FirstName: 'Matt', LastName: 'Comeau', Tickets: [  {Name: 'Ticket 1', Number: '1', Cost: '$2'}, {Name: 'Ticket 2', Number: '2', Cost: '$2'}  ]  }";
-            //var dataInputtedNew = json.Replace("[", "").Replace("]", "").Replace(" ", "");
-            //var objData = JsonConvert.DeserializeObject<JsonOutput>(dataInputtedNew);
+            var json = "{  FirstName: '{firstname}', LastName: '{lastname}', Tickets: [  {Name: 'Ticket 1', Number: '1', Cost: '$2'}, {Name: 'Ticket 2', Number: '2', Cost: '$2'}  ]  }";
 
             var converter = new ExpandoObjectConverter();
             DynamicViewBag message = JsonConvert.DeserializeObject<DynamicViewBag>(json, converter);
-            //var mailBody = Engine.Razor.RunCompile(emailBody, "templateKey", null, message);
 
-
-
-            //string[] FirstName = objData.FirstName.Split(',');
-            //string[] LastName = objData.LastName.Split(',');
-            //string[] Tickets = objData.Tickets.Split(',');
-
-            //string ticketsJson = string.Join(",", Tickets);
-
-            //var objTicket = JsonConvert.DeserializeObject<Tickets>(ticketsJson);
-
-            //string[] Name = objTicket.Name.Split(',');
-            //string[] Number = objTicket.Number.Split(',');
-            //string[] Cost = objTicket.Cost.Split(',');
 
 
             var emailSubject = "Hello, This is a test";
@@ -62,14 +39,12 @@ namespace EmailApp
                     Good luck.
                   </body>
                   </html> "; 
-            var senderEmail = "donotreply@comms.thelottofactory.com";
-
-            //@foreach(var ticketNumber in @Model.Tickets){ <br> @ticketNumber <br>}
+            var senderEmail = "{email}";
 
             var obj1 = new EmailAtt("Test", "Test14")
             {       
                 SenderEmail = senderEmail,
-                RecipientEmail = "matty@thelottofactory.com",
+                RecipientEmail = "(email)",
                 TimeSent = DateTime.Now,
                 Content = emailBody,
                 Subject = emailSubject,
@@ -81,10 +56,10 @@ namespace EmailApp
             };
             var obj2 = new EmailAtt("Test", "Test8")
             {
-                FirstName = "Matt",
-                LastName = "Comeau",
+                FirstName = "First",
+                LastName = "Last",
                 SenderEmail = senderEmail,
-                RecipientEmail = "matty@thelottofactory.com",
+                RecipientEmail = "{email}",
                 TimeSent = DateTime.Now,
                 Content = emailBody,
                 Subject = emailSubject,

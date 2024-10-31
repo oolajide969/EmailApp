@@ -26,8 +26,7 @@ namespace EmailApp
 
             List<EmailAddress> emailAddresses = new List<EmailAddress>
             {
-               new EmailAddress(emailAtt.RecipientEmail){ DisplayName = "Kai"}
-               //new EmailAddress("matty@thelottofactory.com"){ DisplayName = "Matt"}
+               new EmailAddress(emailAtt.RecipientEmail){ DisplayName = "{name}"}
             };
             EmailRecipients emailRecipients = new EmailRecipients(emailAddresses);
             EmailMessage emailMessage = new EmailMessage(emailAtt.SenderEmail, emailContent, emailRecipients);

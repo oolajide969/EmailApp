@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lWY0aOhcoNdrQvA/EYaVApjA5YRzPPM/NuzTKe6ZIJsF8amd5ZKw4IgTQkXFpbVYel0Qx+3Un6bJGL4x16pi3Q==",
+  "dgSpecHash": "xdl/LBHT+2bDhQF7gTQxKwhdu5S7ksosBUdJsgutCUmmcp94F0HzsTnVAu+FTairDIsWcdmTkHv1uwVa3we6mA==",
   "success": true,
-  "projectFilePath": "/Users/lloydd/Documents/GitHub/EmailApp 3/EmailApp/EmailApp.csproj",
+  "projectFilePath": "/Users/lloydd/Documents/GitHub/EmailApp/EmailApp/EmailApp.csproj",
   "expectedPackageFiles": [
     "/Users/lloydd/.nuget/packages/azure.communication.email/1.0.0-beta.1/azure.communication.email.1.0.0-beta.1.nupkg.sha512",
     "/Users/lloydd/.nuget/packages/azure.core/1.26.0/azure.core.1.26.0.nupkg.sha512",

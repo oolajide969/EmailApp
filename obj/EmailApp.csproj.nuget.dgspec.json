@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lloydd/Documents/GitHub/EmailApp 3/EmailApp/EmailApp.csproj": {}
+    "/Users/lloydd/Documents/GitHub/EmailApp/EmailApp/EmailApp.csproj": {}
   },
   "projects": {
-    "/Users/lloydd/Documents/GitHub/EmailApp 3/EmailApp/EmailApp.csproj": {
+    "/Users/lloydd/Documents/GitHub/EmailApp/EmailApp/EmailApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lloydd/Documents/GitHub/EmailApp 3/EmailApp/EmailApp.csproj",
+        "projectUniqueName": "/Users/lloydd/Documents/GitHub/EmailApp/EmailApp/EmailApp.csproj",
         "projectName": "EmailApp",
-        "projectPath": "/Users/lloydd/Documents/GitHub/EmailApp 3/EmailApp/EmailApp.csproj",
+        "projectPath": "/Users/lloydd/Documents/GitHub/EmailApp/EmailApp/EmailApp.csproj",
         "packagesPath": "/Users/lloydd/.nuget/packages/",
-        "outputPath": "/Users/lloydd/Documents/GitHub/EmailApp 3/EmailApp/obj/",
+        "outputPath": "/Users/lloydd/Documents/GitHub/EmailApp/EmailApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/lloydd/.nuget/NuGet/NuGet.Config"
